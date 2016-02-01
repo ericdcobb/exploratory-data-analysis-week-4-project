@@ -30,4 +30,4 @@ completeSet <- cbind(subject, completeSet)
 #tidy set
 final <- aggregate(completeSet[,2:81], list(completeSet$subject, completeSet$activity), mean)
 
-write.table(final, file = "./tidy.csv", row.name=FALSE)
+write.table(final, file = "./tidy.txt", row.name=FALSE)
